@@ -28,7 +28,7 @@ app.get("/products/:id", (req, res) => {
         res.status(404).send({ errorMessage: "Product not found" });   // fluent syntax
     }
 });
-
+ 
 app.post("/products", (req, res) => {
     let np = req.body;
     if (np.productId > 101) {
